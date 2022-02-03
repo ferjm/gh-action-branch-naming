@@ -7,4 +7,4 @@ jobs:
     steps:
       - uses: deepakputhraya/action-branch-name@master
         with:
-          regex: '^(?![0-9]+$)(?!-)[a-zA-Z0-9-]{,63}(?<!-)$' # DNS-1123 label
+          regex: '^(?![0-9]+$)(?!.*-$)(?!-)[a-zA-Z0-9-]{1,63}$' # DNS-1123 label
